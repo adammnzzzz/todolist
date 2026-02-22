@@ -1,0 +1,82 @@
+:root {
+  --gray-700: #0d0d0d;
+  --gray-600: #1a1a1a;
+  --gray-500: #262626;
+  --gray-400: #333333;
+  --blue: #4ea8de;
+  --purple: #5e60ce;
+  --purple-light: #8284fa;
+  --white: #f2f2f2;
+}
+
+.light-theme {
+  --gray-700: #d9d9d9; 
+  --gray-600: #f2f2f2; 
+  --gray-500: #ffffff; 
+  --gray-400: #e1e1e1; 
+  --white: #262626;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  background-color: var(--gray-600);
+  color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.header-section {
+  background-color: var(--gray-700);
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.input-container {
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  max-width: 736px;
+  display: flex;
+  gap: 8px;
+  padding: 0 16px;
+}
+
+.input-task {
+  flex: 1;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  padding: 16px;
+  color: var(--white);
+}
+
+.todo-card {
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.todo-text-done {
+  text-decoration: line-through;
+  color: #808080;
+}
+
+.empty-state {
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding: 64px 24px;
+  color: #808080;
+}
